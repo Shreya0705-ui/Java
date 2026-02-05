@@ -1,4 +1,4 @@
-public class chainingsuper1 {
+
     class Bird {
     Bird() {
         System.out.println("Bird constructor");
@@ -9,7 +9,9 @@ class Sparrow extends Bird {
     Sparrow() {
         super();   
         super();  
+
         System.out.println("Sparrow constructor");
+
     }
 }
 
@@ -19,4 +21,4 @@ public class chainingsuper1 {
     }
 }
 
-}
+

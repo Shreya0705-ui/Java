@@ -3,18 +3,23 @@ import java.util.Scanner;
 Class CheckDuplicate {
 
     int[] arr = new int[5];
-    boolean isDuplicate = false;
+    boolean isDuplicate = false; 
+    //  we make the methods above main class here above psvm
 
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
         CheckDuplicate obj = new CheckDuplicate();
+        //  we make the object here and use it 
+        
 
         System.out.println("Enter 5 elements:");
 
         for (int i = 0; i < obj.arr.length; i++) {
             obj.arr[i] = sc.nextInt();
+            //  calling the method by an object 
+            
         }
 
         for (int i = 0; i < obj.arr.length; i++) {

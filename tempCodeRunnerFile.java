@@ -1,25 +1,50 @@
-import java.util.Scanner;
 
-class car{
-    int model_year ;
-    int milege;
-    public static void main(String[] args){
-        car C1 = new car();
-        car C2 = new car();
 
-        Scanner sc = new Scanner();
+class exp6injava {
 
-        C1.model_year=sc.nextInt();
-        C1.milege = sc.nextInt();
+    public static void main(String[] args) {
 
-        C2.model_year = sc.nextInt();
-        C2.milege = sc.nextInt();
+        String name = "Harry";
+        System.out.println(name);
 
-        System.out.println("The model year of C1 is : " + C1.model_year);   
-        System.out.println("The milege  of C1 is : " + C1.milege); 
+        int value = name.length();
+        //System.out.println(value);
 
-        System.out.println("The model year of C2 is : " + C2.model_year); 
-        System.out.println("The milege  of C2 is : " + C2.milege); 
-        
+        //String lstring = name.toLowerCase();
+        //System.out.println(lstring);
+
+        //String ustring = name.toUpperCase();
+        //System.out.println(ustring);
+
+        //String nonTrimmedString = "     Harry     ";  
+        //System.out.println(nonTrimmedString);
+
+        //String trimmedString = nonTrimmedString.trim();
+        //System.out.println(trimmedString);
+
+        //System.out.println(name.substring(1));
+        //System.out.println(name.substring(1,5));
+
+        //System.out.println(name.replace('r', 'p'));
+        //System.out.println(name.replace("r", "ier"));
+
+        //System.out.println(name.startsWith("Har"));
+        //System.out.println(name.endsWith("dd"));
+
+        //System.out.println(name.charAt(4));
+
+        //String modifiedName = "Harryrryrry";
+        //System.out.println(modifiedName.indexOf("rry"));
+        //System.out.println(modifiedName.indexOf("rry", 4));
+        //System.out.println(modifiedName.lastIndexOf("rry", 7));
+
+        // //System.out.println(name.equals("Harry"));
+        // System.out.println(name.equalsIgnoreCase("HarRY"));
+
+        // System.out.println("I am escape sequence\tdouble quote");
+
+
+
+
     }
 }

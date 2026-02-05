@@ -2,6 +2,7 @@ class Subject{
     int sum(int a , int b){
         return a + b ;
     }
+    // method overloading
     //  int sum ( int a , int b , int c){
     //  return a + b + c ;
     // }

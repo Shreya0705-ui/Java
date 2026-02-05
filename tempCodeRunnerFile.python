@@ -1,0 +1,34 @@
+import math
+import matplotlib.pyplot as plt
+
+# Sigmoid function (uses e)
+def sigmoid(x):
+    return 1 / (1 + math.exp(-x))
+
+# BCE Loss using log
+def bce_loss(y, p):
+    # avoid log(0)
+    p = max(min(p, 1 - 1e-15), 1e-15)
+    return -(y * math.log(p) + (1 - y) * math.log(1 - p))
+
+x_values = [i/10 for i in range(-60, 61)]  # from -6 to +6
+loss_y1 = []
+loss_y0 = []
+
+for x in x_values:
+    p = sigmoid(x)
+    loss_y1.append(bce_loss(1, p))
+    loss_y0.append(bce_loss(0, p))
+
+# Plot Graph
+plt.figure()
+plt.plot(x_values, loss_y1, label="y = 1 (Sigmoid)")
+plt.plot(x_values, loss_y0, label="y = 0 (Sigmoid)")
+
+plt.title("Binary Cross Entropy Loss with Sigmoid")
+plt.xlabel("Input x")
+plt.ylabel("Loss")
+plt.legend()
+plt.grid(True)
+
+plt.show()
