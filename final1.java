@@ -6,7 +6,7 @@ class A{
 }
  
  class B extends A{
-     a = 7;
+    int a = 7;
 
 }
 
